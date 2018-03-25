@@ -2,9 +2,6 @@
 title: "MultiPAS User's Guide"
 author: "Al Fischer"
 output:
-  rmarkdown::latex_document: default
-  bookdown::pdf_book: default
-  bookdown::epub_book: default
   bookdown::gitbook:
     config:
       download:
@@ -15,8 +12,10 @@ output:
         before: |
           <li><a href="index.html">MultiPAS User's Guide</a></li>
         after: |
-          Published in R with bookdown</a></li>
           <li><a href="https://bookdown.org">
+          Published in R with bookdown</a></li>
+  bookdown::epub_book: default
+  bookdown::pdf_book: default
 site: bookdown::bookdown_site
 documentclass: book
 ---
